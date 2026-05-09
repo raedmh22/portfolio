@@ -29,9 +29,9 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 px-6">
+    <section id="projects" className="py-24 px-6 scroll-mt-12">
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-sm font-medium tracking-widest uppercase text-muted-foreground">
+        <h2 className="text-base font-extrabold tracking-widest uppercase text-foreground">
           Projects
         </h2>
         <Separator className="mt-4 mb-8" />

@@ -3,52 +3,52 @@ import { Separator } from "@/components/ui/separator";
 
 const educationItems = [
   {
-    degree: "M.Sc. Business Informatics",
-    institution: "University Name",
-    period: "2023 — Present",
-    description: "Focus areas and relevant coursework. Replace with real details.",
+    degree: "Master's Degree in Finance",
+    institution: "EPI Business School",
+    period: "",
+    description: "",
   },
   {
-    degree: "B.Sc. Business Informatics",
-    institution: "University Name",
-    period: "2019 — 2023",
-    description: "Focus areas and relevant coursework. Replace with real details.",
+    degree: "Licence Degree in Business",
+    institution: "EPI Business School",
+    period: "",
+    description: "",
   },
 ];
 
 export function Education() {
   return (
-    <section id="education" className="py-24 px-6">
-      <div className="mx-auto max-w-3xl">
-        <h2 className="text-sm font-medium tracking-widest uppercase text-muted-foreground">
-          Education
+    <section id="education" className="flex flex-col justify-center min-h-[calc(100vh-3rem)] px-6 scroll-mt-12">
+      <div className="mx-auto max-w-4xl">
+        <h2 className="text-3xl font-extrabold tracking-tight text-foreground text-center sm:text-4xl lg:text-5xl font-sans">
+          𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧
         </h2>
-        <Separator className="mt-4 mb-8" />
+        <Separator className="mt-4 mb-10" />
 
-        <div className="space-y-8">
+        <div className="grid gap-6 sm:grid-cols-2">
           {educationItems.map((item, index) => (
-            <div key={index} className="flex gap-4">
-              <div className="shrink-0 mt-1">
-                <div className="flex size-10 items-center justify-center rounded-lg bg-muted">
-                  <GraduationCap className="size-5 text-muted-foreground" />
+            <div key={index} className="rounded-xl border border-border p-6 transition-all hover:border-highlight/30 hover:shadow-md">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex size-12 items-center justify-center rounded-full bg-highlight/10">
+                  <GraduationCap className="size-6 text-highlight" />
                 </div>
+                <h3 className="text-xl font-bold text-foreground">
+                  {item.degree}
+                </h3>
               </div>
-              <div className="space-y-1.5">
-                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-                  <h3 className="text-base font-semibold text-foreground">
-                    {item.degree}
-                  </h3>
-                  <span className="text-xs text-muted-foreground font-medium whitespace-nowrap">
-                    {item.period}
-                  </span>
-                </div>
-                <p className="text-sm font-medium text-muted-foreground">
-                  {item.institution}
-                </p>
-                <p className="text-sm text-muted-foreground leading-relaxed pt-1">
+              <p className="text-base font-semibold text-highlight mb-2">
+                {item.institution}
+              </p>
+              {item.period && (
+                <span className="text-xs font-bold tracking-wider uppercase text-highlight bg-highlight/10 px-3 py-1 rounded-full">
+                  {item.period}
+                </span>
+              )}
+              {item.description && (
+                <p className="text-base text-muted-foreground leading-relaxed mt-3">
                   {item.description}
                 </p>
-              </div>
+              )}
             </div>
           ))}
         </div>

@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="border-t border-border py-8 px-6">
       <div className="mx-auto max-w-3xl flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-muted-foreground">
-          &copy; {year} Sofya Nikulkina
+          &copy; {year} Azer Haj Ali
         </p>
         <div className="flex items-center gap-6">
           <a
@@ -21,7 +21,7 @@ export function Footer() {
             GitHub
           </a>
           <a
-            href="mailto:placeholder@email.com"
+            href="mailto:azerhajjj@gmail.com"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             Email
