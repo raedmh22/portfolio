@@ -44,7 +44,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
       <div className="grid h-12 grid-cols-3 items-center px-4">
         <a href="#home" className="inline-flex items-center justify-center size-10 rounded-full bg-foreground text-background text-base font-extrabold tracking-tight justify-self-start italic font-serif">
-          NS
+          SN
         </a>
 
         <nav className="hidden md:flex items-center justify-center gap-0">

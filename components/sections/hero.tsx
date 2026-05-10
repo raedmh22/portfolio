@@ -73,14 +73,16 @@ export function Hero() {
 
         <div className="mt-6 flex items-center gap-4">
           <a
-            href="#"
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"
             aria-label="GitHub"
           >
             <GithubIcon className="size-5" />
           </a>
           <a
-            href="mailto:placeholder@email.com"
+            href="mailto:azerhajjj@gmail.com"
             className="text-muted-foreground hover:text-foreground transition-colors"
             aria-label="Email"
           >
@@ -92,8 +94,8 @@ export function Hero() {
           <a href="#contact">
             <Button>Get in Touch</Button>
           </a>
-          <a href="#projects">
-            <Button variant="outline">View Projects</Button>
+          <a href="#skills">
+            <Button variant="outline">View Skills</Button>
           </a>
         </div>
       </div>

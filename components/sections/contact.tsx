@@ -35,7 +35,7 @@ export function Contact() {
             </a>
 
             <a
-              href="#"
+              href="https://linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group"
@@ -47,7 +47,7 @@ export function Contact() {
             </a>
 
             <a
-              href="#"
+              href="https://github.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group"
